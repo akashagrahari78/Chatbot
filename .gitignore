@@ -1,0 +1,14 @@
+.env
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local SQLite/chat history files
+chatbot.db
+chatbot.db-*
+*.sqlite
+*.sqlite-*
