@@ -37,5 +37,3 @@ if user_input:
             )
         )
     st.session_state['message_history'].append({'role': 'assistant', 'content': ai_message})
-
- 

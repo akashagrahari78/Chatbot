@@ -30,7 +30,7 @@ if user_input:
     response = chatbot.invoke({'messages': [HumanMessage(content = user_input)]}, config=config)
     ai_message = response['messages'][-1].content
 
-    # first add the user_input to message_history
+    # first add the ai_output to message_history
     st.session_state['message_history'].append({'role': 'assistant', 'content': ai_message})
     with st.chat_message('assistant'):
         st.text(ai_message)
